@@ -1,5 +1,5 @@
 <template>
-      <div>DebugPannel</div>
+      <div id="debugPanel">DebugPanel</div>
 </template>
 
 
@@ -10,5 +10,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+#debugPanel{
+      padding: 10px;
+      border:solid 1px black;
+      border-collapse:collapse;
+}
 </style>

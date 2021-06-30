@@ -1,5 +1,5 @@
 <template>
-      <div>PannelloMosart</div>
+      <div id="mosart">PannelloMosart</div>
 </template>
 
 
@@ -10,5 +10,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+#mosart{
+      padding: 10px;
+      border:solid 1px black;
+      border-collapse:collapse;
+}
 </style>

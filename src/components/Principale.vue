@@ -1,12 +1,9 @@
 <template>
-  <div class="container">
+  <div class="container" id="principale">
     <div class="row">
       <Destinazione class="col-6"/>
       <PannelloMosart class="col-3" />
       <DebugPanel class="col-3"/>
-    </div>
-    <div class="d-flex justify-content-center my-2">
-      <button class="btn btn-primary">Click</button>
     </div>
   </div>
 </template>
@@ -24,4 +21,10 @@ export default {
 }
 </script>
 <style scoped>
+
+#principale{
+      
+      border:solid 3px red;
+      border-collapse:collapse;
+}
 </style>
