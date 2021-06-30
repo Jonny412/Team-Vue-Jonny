@@ -1,11 +1,12 @@
 <template>
 <div id="team">
-<Destinazione />
-<PannelloMosart />
-<DebugPannel />
-<div id="team">
+    <Destinazione />
+    <PannelloMosart />
+    <DebugPannel />
+</div>
 </template>
 
+<script>
 import Destinazione from './Destinazione'
 import PannelloMosart from './PannelloMosart'
 import DebugPannel from './DebugPannel'
@@ -21,7 +22,7 @@ export default {
 
   }
 }
-<script>
 </script>
 
 <style>
+</style>

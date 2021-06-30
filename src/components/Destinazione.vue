@@ -1,27 +1,14 @@
 <template>
-<div id="team">
-<Principale />
-<PannelloMosart />
-<DebugPannel />
-<div id="team">
+      <div>Destinazione</div>
 </template>
 
-import Principale from './Principale'
-import PannelloMosart from './PannelloMosart'
-import DebugPannel from './DebugPannel'
 
-export default {
-  name: 'team',
-  components: {
-    Principale,
-    PannelloMosart,
-    DebugPannel
-
-
-
-  }
-}
 <script>
+export default {
+
+ 
+}
 </script>
 
 <style>
+</style>
