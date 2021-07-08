@@ -5,12 +5,43 @@
 </template>
 <script>
 import Principale from './components/Principale'
+import store from './store/index'
+import {mapActions, mapState} from 'vuex'
 export default {
   name: 'app',
   components: {
     Principale
-  } 
+  },
+  beforeMount() {
+    const datiUsers = sessionStorage.getItem('users');
+    const parseUser = JSON.parse(datiUsers);
+    this.getItems(parseUser);
+    console.log(parseUser);
+    
+
+  },
+  methods:{
+    ...mapActions([
+      'getItems'
+
+    ]),
+    
+  },
+  computed:{
+
+    ...mapState([
+      'contenuto',
+      'areaState'
+      
+    ])
+
+
+
+  }
+ 
 }
+
+ 
 </script>
 
 <style>
