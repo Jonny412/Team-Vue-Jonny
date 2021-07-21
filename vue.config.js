@@ -107,7 +107,7 @@ const valoreRelease = () =>{
 //   const version = JSON.parse(packageJson).release
 //   const name= JSON.parse(packageJson).name
 
-  let rilascio = '_' + valoreRelease();
+  //let rilascio = '_' + valoreRelease();
   let dateRelease = '_' + dd() + mm() + yy() + hours() + minutes();
 module.exports = {
     // configureWebpack: {
@@ -119,7 +119,7 @@ module.exports = {
     //         })
     //     ]
     // },
-    outputDir: path.resolve(__dirname, "dist/Relase" + ' ' + rilascio),
+    outputDir: path.resolve(__dirname, "dist/Relase_" + ' ' + valoreRelease()),
     transpileDependencies: [
         'vuetify'
     ]
