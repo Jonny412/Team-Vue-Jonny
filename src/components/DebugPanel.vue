@@ -1,5 +1,5 @@
 <template>
-      <div id="debugPanel" class="d-flex flex-column">DebugPanel
+      <div id="debugPanel">
             <div class=" deb d-flex mx-5 mb-2">
                   <label>GUIDE:</label>
                   <input type="number" max="5" min="0" class="form-control" v-model="areaState">
@@ -68,8 +68,11 @@ export default {
 <style scoped>
 #debugPanel{
       padding: 10px;
-      border:solid 1px black;
-      border-collapse:collapse;
+      border-collapse: collapse;
+      box-shadow: 2px 10px 20px black;
+      border-radius: 0px 0px 10px 10px;
+      background: #3c3c3c;
+    
 }
 
 .deb{

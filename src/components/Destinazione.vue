@@ -1,5 +1,5 @@
 <template>
-    <div id="destinazione" class="my-5">
+    <div id="destinazione">
         <div class="mod mt-3">
             <h6 class="title text-left">Destinazione</h6>
             <div class="d-flex align-items-center mx-1 my-3">
@@ -104,6 +104,13 @@ export default {
 
 <style scoped>
     #destinazione {
+
+        
+        box-shadow: 2px 10px 20px black;
+        border-radius: 0px 0px 10px 10px;
+        background-color: #36393d;
+
+      
         
     }
     .mod {
@@ -117,7 +124,7 @@ export default {
     }
     h6 {
         margin-left: 10px;
-        background-color: #fff;
+        background-color: #36393d;
     }
 
 </style>

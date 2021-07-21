@@ -1,15 +1,11 @@
 <template>
-  <div class="container" id="principale">
+  <div class="container mt-0" id="principale">
     <div class="row">
-      <Destinazione class="col-6"/>
+    <Destinazione class="col-6"/>
       <PannelloMosart class="col-3" />
       <DebugPanel class="col-3" v-if="boolPanel" />
-       
-       <button @click="activeDebugPanel" >Release 1.0.0</button>
-       <div class="dP" v-if="boolPanel==true">{{altezza}}</div>
-      <!-- <div  class="dP" v-else>{{altezza * 10}}</div> -->
-
-       <p id="pumba">{{altezza}}</p>
+      <div class="col-6"></div>
+      <button @dblclick="activeDebugPanel" class="col-3">Release {{versionRelease.release}}</button>
     </div>
   </div>
 </template>
@@ -28,6 +24,11 @@ export default {
     boolPanel: false,
     altezza: 150,
     }
+  },
+
+  props:{
+    versionRelease: Number,
+
   },
 
 
@@ -74,11 +75,9 @@ methods: {
 
 #principale{
       
-      border:solid 3px red;
-      border-collapse:collapse;
+      
+      border-collapse: collapse;
+      color: white;
 }
 
-#dP{
-  background-color:gray;
-}
 </style>

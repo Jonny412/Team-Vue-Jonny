@@ -90,4 +90,4 @@ no
 
 //# 10 indicare almeno 3 direttive per i template
 
-v-if / v-else, v-for, v-model, v-bind, v-on, v-once. 
+//v-if / v-else, v-for, v-model, v-bind, v-on, v-once. 

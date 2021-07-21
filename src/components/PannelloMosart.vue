@@ -1,6 +1,6 @@
 <template>
   <div >
-    <div id="pannellmosart" class="m-1">
+    <div id="pannelloMosart">
       <select class="form-select">
         <option value="1">CH1</option>
         <option value="2">CH2</option>
@@ -57,7 +57,11 @@ export default {
 </script>
 
 <style>
-#pannellinoMosart {
-  border: 1px solid black;
+#pannelloMosart {
+  
+ box-shadow: 5px 5px 8px black;
+ border-radius: 0px 0px 10px 10px;
+ background:#3c3c3c;
+  padding:10px;
 }
 </style>

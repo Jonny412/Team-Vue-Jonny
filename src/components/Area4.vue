@@ -10,7 +10,7 @@
                             <option value="0">...</option>
                             <option v-for="(item,k) in contenuto" :key="k" :value="k">{{item.userId}}</option>
                         </select>
-                        <p>{{contenuto}}</p>
+                        
                         <div class="form-check d-flex justify-content-center">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" v-model="controlli">
                             <label class="form-check-label px-1" for="flexCheckDefault">
